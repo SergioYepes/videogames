@@ -1,0 +1,25 @@
+form{
+    display: flex;
+    flex-direction:row; 
+    @media screen and (min-width:768px){
+        padding-right: 1rem;
+    }
+}
+.SearchBInput{
+    width: 7rem;
+    border-radius: 5px 0 0 5px;
+    border-color: transparent;
+    @media screen and (min-width:768px){
+        width: 18rem;
+        height: 2rem;
+    }
+}
+.SearchBBT{
+    border-radius: 0 5px 5px 0;
+    border-color: transparent;
+    background-color: #00ffcc;
+}
+.SearchBBT:hover{
+    background-color: #ffcc00;
+    cursor: pointer;
+}

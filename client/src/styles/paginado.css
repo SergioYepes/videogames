@@ -1,0 +1,23 @@
+.paginado{
+    list-style-type: none;
+    gap:.2rem;
+    button{
+        background-color: #ff00ff; /* Magenta */
+        color: #ffff00; /* Amarillo neón */
+        box-shadow: 0 4px 8px rgba(255, 0, 255, 0.2); 
+        transition: box-shadow 0.3s ease; 
+        padding: 5px 10px; 
+        border-radius: 20px;
+        border-color:#ff00ff
+    }
+    button:hover {
+        box-shadow: 0 8px 16px rgba(255, 0, 255, 0.4);
+        background-color: #00ffff; /* Azul cian */
+        color: #2e2b2b; /* Blanco */
+    }
+    button:focus{
+        background-color: #00ff00;
+        outline: none;
+        color:#2e2b2b
+    }
+}

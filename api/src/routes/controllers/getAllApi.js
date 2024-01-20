@@ -4,7 +4,7 @@ const getApiInfo= async ()=>{
     let promises = []
     let allGames = []
     try{
-        for(let i=1; i<=10; i++){
+        for(let i=1; i<=20; i++){
             promises.push(axios.get(`https://api.rawg.io/api/games?key=${API_KEY}&page=${i}`)
             .then((response)=>{
                 return response

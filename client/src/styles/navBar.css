@@ -1,0 +1,51 @@
+.navbar{
+    background-color: #0a0a0a; /* Fondo negro */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    gap:.5rem;
+    @media screen and (min-width: 768px){
+        gap:2rem
+    } 
+    @media screen and (min-width: 1024px){
+        gap:15rem;
+    } 
+}
+.logo{
+    @media screen and (min-width: 768px){
+        img{
+            height:3rem
+        }
+    } 
+}
+.FavLink, .Link{
+    text-decoration: none;
+}
+.favButton,
+.linkToHome,
+.linkToCreate{
+    font-size: 16px;
+    color: #00ffcc; /* Color verde azulado para los elementos del menú */
+    text-shadow: 0 0 10px rgb(0, 89, 255),
+               0 0 20px rgb(0, 174, 255),
+               0 0 30px rgb(0, 238, 255);
+    cursor: pointer;
+    @media screen and (min-width:1024px){
+        font-size: 30px;
+    }
+}
+.favButton:hover,
+.linkToHome:hover,
+.linkToCreate:hover{
+    color: #ffcc00; /* Cambia el color al pasar el ratón */
+    transition: color 0.3s ease-in-out;
+    text-shadow: 0 0 10px rgb(229, 255, 0),
+               0 0 20px rgb(255, 153, 0),
+               0 0 30px rgb(255, 72, 0);
+}

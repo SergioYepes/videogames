@@ -1,0 +1,13 @@
+.divHeader, .divContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    height: 100vh;
+  }
+.paginado{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    padding: 1rem .5rem;
+}
