@@ -1,0 +1,53 @@
+.imageGame{
+    width: 100%;
+    min-height: 4rem;
+    max-height: 4rem;
+    @media screen and (min-width:768px){
+        min-height: 7rem;
+        max-height: 7rem;
+    }
+    @media screen and (min-width: 1024px) {
+        min-height: 9rem;
+        max-height: 9rem; 
+    }
+}
+.divCard{
+    background: linear-gradient(to bottom, #1c1c31, #11111f);
+    color: #fff; /* Color de texto blanco */
+    border: 1px solid #3f3f3f; /* Borde color gris oscuro */
+     /* Estilo metalizado oxidado */
+    background-blend-mode: overlay;
+    background-image: url('../assets/images/textura-oxidada.jpg'); /* Sustituye 'textura-oxidada.jpg' con tu imagen de textura oxidada */
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.658);
+
+    height: 15rem;
+    @media screen and (min-width: 768px){
+        height: 20rem;
+    }  
+    ::-webkit-scrollbar{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+.name{
+    font-size: 17px;
+    height: 2rem;
+    @media screen and (min-width: 786px){
+      font-size: 18px;
+        height: 3rem;
+    }
+    overflow: scroll;
+    
+}
+.nameGenres{
+    font-size: 13px;
+    padding-right: 1rem;
+    margin: .2rem;
+    @media screen and (min-width: 768px) {
+       font-size: 15px; 
+    }
+}

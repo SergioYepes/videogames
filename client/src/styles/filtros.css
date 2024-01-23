@@ -1,0 +1,162 @@
+.nameFGenres, .nameFOrigin,.nameFName,.nameFRating{
+    background-color: #4e23bd; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: fixed;   
+    transform: translateY(-50%) rotate(270deg); 
+    z-index: 999;
+    transition: transform .5s ease;
+    @media screen and (min-width:768px) {
+        padding:20px;
+        font-size:23px
+    }
+    @media screen and (min-width:1024px) {
+        font-size: 15px;
+        padding: 15px;
+    }
+}
+.nameFGenres:hover, .nameFOrigin:hover,.nameFName:hover,.nameFRating:hover {
+    background-color: #1f0d3c; /* Cambia el color de fondo al pasar el mouse */
+    z-index: 999;
+  }
+.nameFGenresSelect, .nameFOriginSelect,.nameFNameSelect,.nameFRatingSelect{
+    background-color: #3552f7; /* Color de fondo */
+    color: #f8f8f8; /* Color del texto */
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: fixed;   
+    transform: translateY(-50%) rotate(270deg); 
+    z-index: 999;
+    @media screen and (min-width:768px) {
+        padding:20px;
+        font-size:23px
+    }
+    @media screen and (min-width:1024px) {
+        font-size: 15px;
+        padding: 15px;
+    }
+}
+.nameFGenresSelect:hover, .nameFOriginSelect:hover,.nameFNameSelect:hover,.nameFRatingSelect:hover {
+    background-color: #130f53; /* Cambia el color de fondo al pasar el mouse */
+    z-index: 999;
+  }
+.nameFGenres{
+    right: -6%;
+    top: 32%;
+    @media screen and (min-width:768px) {
+        right: -4%;
+        top: 30%;
+    }
+    @media screen and (min-width:1024px) {
+        right: -1.5%;
+        top: 31%
+    }
+}
+.nameFGenresSelect{
+    right: -9%;
+    top: 17%;
+    width: 7rem;
+    @media screen and (min-width:768px) {
+        right: -5%;
+        top: 14%;
+        width: 10rem;
+    }
+    @media screen and (min-width:1024px) {
+        right: -2%;
+        top: 14%;
+        width: 7rem;
+    }
+}
+.nameFOrigin{
+    right: 8%;
+    top: 40%;
+    @media screen and (min-width:768px) {
+        top: 43%;
+        right: 9%;
+    }
+    @media screen and (min-width:1024px) {
+        top:39%;
+        right:4%
+    }
+}
+.nameFOriginSelect{
+    right: 10%;
+    top: 35%;
+    width: 8rem;
+    @media screen and (min-width:768px) {
+        right: 4%;
+        top: 28%;
+        width: 11rem;
+    }
+    @media screen and (min-width:1024px) {
+        right: 6%;
+        top: 34%;
+        width: 8rem;
+    }
+}
+.nameFName{
+    right: 7.5%;
+    top: 56%;
+    @media screen and (min-width:768px) {
+        right: 9.2%
+    }
+    @media screen and (min-width:1024px) {
+        right: 4%;
+        top:59%
+    }
+}
+.nameFNameSelect{
+    right: 2%;
+    top: 46%;
+    width: 12rem;
+    @media screen and (min-width:768px) {
+        right: -3%;
+        top: 77%;
+        width: 18rem;
+    }
+    @media screen and (min-width:1024px) {
+        right: 3%;
+        top: 70%;
+        width: 13rem;
+    }
+}
+.nameFRating{
+    right: -3.5%;
+    top: 65%;
+    @media screen and (min-width:768px) {
+        top:69%;
+        right:-2.2%
+    }
+    @media screen and (min-width:1024px) {
+        top:68%;
+        right:-0.5%
+    }
+}
+.nameFRatingSelect{
+    right: -21%;
+    top: 86%;
+    width: 13rem;
+    @media screen and (min-width:768px) {
+        right: -9%;
+        top: 87%;
+        width: 13rem;
+    }
+    @media screen and (min-width:1024px) {
+        right: -1.5%;
+        top: 83%;
+        width: 13rem;
+    }
+}
+.listado{
+    position: absolute;
+    li{
+        list-style: none;
+    }
+}

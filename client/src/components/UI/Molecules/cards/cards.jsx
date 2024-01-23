@@ -23,17 +23,17 @@ function  Cards({allGames,addFavGames}) {
       {allGames &&
         allGames.map((d) => {
           const heart = fav.some((favGame) => favGame.id === d.id) ? "❤️" : "🖤";
-
+          console.log(d.genres);
           return (
-            <div key={d.id}>
+            <div key={d.id} className='cardContent'>
               <button
-                className="favButton"
+                className="favButtonCard"
                 onClick={() => addFavGames({ name: d.name, background_image: d.background_image, genres: d.genres, id: d.id })}
               >
-                {heart} fav {heart}
+                {heart}
               </button>
               <Link to={"/home/" + d.id} style={{ textDecoration: "none" }}>
-                <Card name={d.name} background_image={d.background_image} genres={d.genres.map(e=>e.name)} key={d.id} />
+                <Card name={d.name} background_image={d.background_image} genres={d.genres} key={d.id} />
               </Link>
               {d.createdInDb ? (
                 <button className="favButton" onClick={() => handleDelete(d.id)}>

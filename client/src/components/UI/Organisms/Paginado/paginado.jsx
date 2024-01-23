@@ -22,15 +22,15 @@ function Paginado({gamePerPg,allGames,paginado,setCurrentPage,currentPage}) {
     <>    
     <nav>
     <ul className='paginado'>
-      <button onClick={e=>prevPg(e)}>👈</button> 
+      <button onClick={e=>prevPg(e)} className='paginadoBtn'>👈</button> 
         {pageN.length>1 &&
           pageN.map(n=>(
             <li key={n}>
-                <button onClick={()=>paginado(n)}><strong>{n}</strong></button>
+                <button onClick={()=>paginado(n)} className='paginadoBtn'><strong>{n}</strong></button>
             </li>
           ))
         }
-      <button onClick={e=>nextPg(e)}>👉</button>
+      <button onClick={e=>nextPg(e)} className='paginadoBtn'>👉</button>
     </ul>
     </nav> 
     

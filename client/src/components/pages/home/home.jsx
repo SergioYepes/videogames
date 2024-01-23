@@ -15,21 +15,23 @@ function Home() {
 
     const[loading,setLoading]=useState(true)
     const[currentPage,setCurrentPage]=useState(1)
-    const[gamePerPg]=useState(15)
+    const[gamePerPg]=useState(16)
     const inLastGame= currentPage*gamePerPg
     const inFirstGame= inLastGame-gamePerPg
     const currentGame=allGames.slice(inFirstGame,inLastGame)
+    const [showFilters, setShowFilters] = useState(false);
 
     const paginado=(pageN)=>{
       setCurrentPage(pageN)
     }
 
-
     useEffect(()=>{
         dispatch(getAllGames())
         setLoading(false)
     },[dispatch])
-   
+   function handleChange(){
+      setShowFilters(!showFilters);
+   }
     
   return (
     <div className='home'>
@@ -39,13 +41,14 @@ function Home() {
             Tu navegador no admite el elemento de video.
           </video>
       </div>
+        <button className="filtros" onClick={handleChange}>{showFilters ? 'Ocultar Filtros' : 'Mostrar Filtros'}</button>
       <div className='divHeader'>
         <NavBar setCurrentPage={setCurrentPage}/>
         <h1 className="welcome">🤘Bienvenido/a🤘</h1>
-        <div className="filtros"><Filtros setCurrentPage={setCurrentPage} /></div>
       </div>
       {loading?<img src={gift} alt="Loading..."/>:
       <div className='divContent'>
+        {showFilters && <Filtros setCurrentPage={setCurrentPage} />}
           <div className="paginado">
           <Paginado gamePerPg={gamePerPg} allGames={allGames.length} paginado={paginado} setCurrentPage={setCurrentPage} currentPage={currentPage}/>
         </div>
