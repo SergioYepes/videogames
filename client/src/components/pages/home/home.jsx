@@ -6,6 +6,7 @@ import NavBar from "../../UI/Organisms/navBar/navBar"
 import Paginado from '../../UI/Organisms/Paginado/paginado'
 import Filtros from '../../UI/Organisms/Filtrado/filtros'
 import Video from "../../../assets/videos/homeBackground.mp4"
+import CustomVideo from '../../UI/Atoms/CustomVideo'
 import "../../../styles/home.css"
 const gift="https://i.pinimg.com/originals/53/ed/3f/53ed3f69d8af8e1fb7b0025a97452e38.gif"
 
@@ -35,12 +36,7 @@ function Home() {
     
   return (
     <div className='home'>
-      <div className="video-container">
-          <video autoPlay loop playsInline muted className="video-bg">
-            <source src={Video} type="video/mp4" />
-            Tu navegador no admite el elemento de video.
-          </video>
-      </div>
+      <CustomVideo Video={Video}/>
         <button className="filtros" onClick={handleChange}>{showFilters ? 'Ocultar Filtros' : 'Mostrar Filtros'}</button>
       <div className='divHeader'>
         <NavBar setCurrentPage={setCurrentPage}/>

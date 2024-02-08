@@ -1,0 +1,87 @@
+
+.favHeader{   
+    background-color: #0a0a0a; /* Fondo negro */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.ButtonHomeDet,
+.ButtonCreateDet{
+    background-color: transparent;
+    font-size: 26px;
+    color: #00ffcc; /* Color verde azulado para los elementos del menú */
+    text-shadow: 0 0 10px rgb(0, 89, 255),
+               0 0 20px rgb(0, 174, 255),
+               0 0 30px rgb(0, 238, 255);
+    cursor: pointer;
+    @media screen and (min-width:1024px){
+        font-size: 30px;
+    };
+    border: transparent;
+}
+.ButtonHomeDet:hover,
+.ButtonCreateDet:hover{
+    color: #ffcc00;
+    transition: color 0.3s ease-in-out;
+    text-shadow: 0 0 10px rgb(229, 255, 0),
+               0 0 20px rgb(255, 153, 0),
+               0 0 30px rgb(255, 72, 0);
+}
+.nameFa{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: #ffcc00; 
+    transition: color 0.3s ease-in-out;
+    text-shadow: 0 0 10px rgb(229, 255, 0),
+               0 0 20px rgb(255, 153, 0),
+               0 0 30px rgb(255, 72, 0);
+}
+.favContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre elementos */
+    justify-content: space-around;
+    
+  }
+  
+  .divFav {
+    flex: 1 1 calc(50% - 20px); 
+    max-width: calc(40% - 20px); 
+    background: linear-gradient(to bottom, #1c1c31, #11111f);
+    color: #fff; /* Color de texto blanco */
+    border: 1px solid #3f3f3f; /* Borde color gris oscuro */
+     /* Estilo metalizado oxidado */
+    background-blend-mode: overlay;
+    background-image: url('../assets/images/textura-oxidada.jpg'); /* Sustituye 'textura-oxidada.jpg' con tu imagen de textura oxidada */
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.658);
+
+    height: 15rem;
+    @media screen and (min-width: 768px){
+        height: 20rem;
+    }  
+    ::-webkit-scrollbar{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    };
+    overflow: hidden; 
+    @media screen and (min-width:1024px) {
+        flex: 1 1 calc(25% - 20px); 
+    }
+    position: relative;
+  }
+  
+  .divFav img {
+    width: 100%; 
+  }
+  .delButton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }

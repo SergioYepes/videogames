@@ -2,6 +2,8 @@ import React, { useEffect} from 'react'
 import {Link, useParams} from "react-router-dom"
 import {useDispatch,useSelector} from "react-redux"
 import { getDetails, vaciar } from '../../../redux/actions'
+import CustomVideo from "../../UI/Atoms/CustomVideo"
+import Video from "../../../assets/videos/detailsBackground.mp4"
 import "../../../styles/detalles.css"
 
 
@@ -15,38 +17,52 @@ function Detalles() {
   },[dis,id])
   return (
     <div className='divDetails'>
-      <Link to="/home"><button className="ButtonHomeDet" id="home">Home</button></Link>
-      <Link to="/create"><button className="ButtonCreateDet">Create</button></Link>
+      <CustomVideo Video={Video}/>
+      <header className='detailsHeader'>
+        <Link to="/home"><button className="ButtonHomeDet" id="home">Home</button></Link>
+        <Link to="/create"><button className="ButtonCreateDet">Create</button></Link>
+      </header>
+      
       {
         gameDetail.length > 0 ?
-          <div>
+          <section>
             <h1 className="nameD">{gameDetail[0].name}</h1>
             <ul className="list">
-              <li>
+              <li className='detImage'>
                 <img src={gameDetail[0].background_image} alt={gameDetail[0].background_image} className="background_image"/>
               </li>
               <li id="caja">
                 <div>
-                  <h2 className="characters" id="h2">Generos: </h2>
-                  <ul className="allTemps">
-                    {gameDetail[0].genres && gameDetail[0].genres.length ?
-                        gameDetail[0].genres.map((e,index)=>{ return <li key={index}><label>{e}</label></li> }) 
-                   : "Genres not found"
-                  } 
-                  {console.log(gameDetail[0])}
-                  <h4 className="characters">Platforms: </h4>
-                    <p>{gameDetail[0].platforms}</p>
+                  <div className='firstDetCont'>
+                     <h2 className="characters" id="h2">Generos: </h2>
+                      <ul className="allGenres">
+                        {gameDetail[0].genres && gameDetail[0].genres.length ?
+                            gameDetail[0].genres.map((e,index)=>{ return <li key={index}><p>{e}</p></li> }) 
+                      : "Genres not found"
+                      } 
+                      {console.log(gameDetail[0])}
+                      </ul>
+                  </div>
+                  <div className='secondDetCont'>
+                    <h2 className="characters">Platforms: </h2>
+                    <p>{gameDetail[0].platforms}</p>  
+                  </div>  
                   
-                  <h4 className="characters">Rating: </h4>
-                    <p>{gameDetail[0].rating}  Stars</p>    
+                   <div className='thirdDetCont'>
+                     <h2 className="characters">Rating: </h2>
+                    <p>{gameDetail[0].rating}  Stars</p>   
+                  </div> 
+                    
+                   <div className='fourthDetCont'>
+                     <h2 className="characters">Released at: </h2>
+                    <p>{gameDetail[0].released}</p> 
+                  </div> 
                   
-                  <h4 className="characters">Released at: </h4>
-                    <p>{gameDetail[0].released}</p>
-                  </ul>
+                  
                 </div>
               </li>
             </ul>
-          </div>
+          </section>
           :
           <div className="loading">
             <h1><strong>Loading...</strong></h1>

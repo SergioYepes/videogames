@@ -1,0 +1,95 @@
+.divCreate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95vw;
+    h4{
+        color: #7FFF00;
+        text-shadow: 2px 2px 4px #009999;
+        text-align: center;
+    }
+    input, select{
+        background-color: #00d5ff5d;
+        padding: 5px; 
+        border: 1px solid #ccc; 
+        border-radius: 5px; 
+        font-size: 16px;
+        width: 10rem;
+        color: #0d1a01;
+        @media screen and (min-width:768px){
+            width: 15rem;
+        }
+      }
+    input::placeholder, select::placeholder{
+        color: #1a3202;
+    }
+    button{
+        background-color: #990000;
+        padding: 10px;
+        color: #c6c6c6;
+        border-radius: 20px;
+        border-color: #009999;
+    }
+}
+.fourthSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.firstSection, .secondSection, .thirdSection, .fifthSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .5rem;
+    padding-bottom: 1rem;
+    @media screen and (min-width: 768px){
+      gap: 2rem;  
+    }
+}
+.LinkC{
+    background-color: transparent;
+    color:rgb(41, 236, 243);
+    text-shadow: 0 0 10px rgba(0, 255, 170, 0.8),
+               0 0 20px rgba(0, 204, 255, 0.8),
+               0 0 30px rgba(0, 26, 255, 0.8);
+    margin: 1rem;
+    text-align: center;
+    border:transparent;
+    font-size: 30px;
+    @media screen and (min-width: 768px) {
+        font-size: 40px;
+        margin: .5rem;
+    }
+    
+}
+.LinkC:hover{
+    color:rgb(104, 247, 72);
+    text-shadow: 0 0 10px rgba(238, 255, 0, 0.8),
+               0 0 20px rgba(255, 166, 0, 0.8),
+               0 0 30px rgba(255, 72, 0, 0.8);
+}
+.titleC{
+    color:rgb(104, 247, 72);
+    text-shadow: 0 0 10px rgba(238, 255, 0, 0.8),
+               0 0 20px rgba(255, 166, 0, 0.8),
+               0 0 30px rgba(255, 72, 0, 0.8);
+}
+.createHeader{
+    background-color: rgba(137, 43, 226, 0.626);
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.error{
+    color: #990000;
+    text-shadow: 0px 0px 10px #ffffff,
+                0px 0px 20px #c6fcfc,
+                0px 0px 30px #3cfbfb
+}
