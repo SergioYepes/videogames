@@ -1,7 +1,7 @@
 import React from 'react'
-import ButtonLink from '../../UI/Atoms/buttonLink'
+import ButtonLink from '../../UI/Atoms/buttonLink.jsx'
 import "../../../styles/landing.css"
-import CustomVideo from '../../UI/Atoms/CustomVideo'
+import CustomVideo from '../../UI/Atoms/CustomVideo.jsx'
 import Video from "../../../assets/videos/background.mp4"
 
 function Landing() {

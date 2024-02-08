@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import SearchBar from '../../Molecules/searchBar/searchBar'
-import NavButtom  from "../../Atoms/navButton"
+import SearchBar from '../../Molecules/searchBar/searchBar.jsx'
+import NavButtom  from "../../Atoms/navButton.jsx"
 import "../../../../styles/navBar.css"
 const LOGO= "https://cdn.dribbble.com/users/23569/screenshots/1830987/media/0ba42d2700410a0952889493d912788d.png"
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect,useSelector,useDispatch} from "react-redux"
 import { Link ,useHistory} from 'react-router-dom'
-import Card from "../../Atoms/card"
+import Card from "../../Atoms/card.jsx"
 import { addFavGame , deleteDB} from '../../../../redux/actions'
 
 import "../../../../styles/cards.css"

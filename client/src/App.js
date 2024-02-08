@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
-import Landing from './components/pages/landing/landing';
-import Home from './components/pages/home/home';
-import Nuevo from './components/pages/Create/nuevo';
-import Detalles from './components/pages/Details/details'
-import Error404 from './components/pages/errors/error404';
-import Favorites from './components/pages/Favorites/favorites';
+import Landing from './components/pages/landing/landing.jsx';
+import Home from './components/pages/home/home.jsx';
+import Nuevo from './components/pages/Create/nuevo.jsx';
+import Detalles from './components/pages/Details/details.jsx'
+import Error404 from './components/pages/errors/error404.jsx';
+import Favorites from './components/pages/Favorites/favorites.jsx';
 
 function App() {
   return (

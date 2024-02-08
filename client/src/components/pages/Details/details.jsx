@@ -2,7 +2,7 @@ import React, { useEffect} from 'react'
 import {Link, useParams} from "react-router-dom"
 import {useDispatch,useSelector} from "react-redux"
 import { getDetails, vaciar } from '../../../redux/actions'
-import CustomVideo from "../../UI/Atoms/CustomVideo"
+import CustomVideo from "../../UI/Atoms/CustomVideo.jsx"
 import Video from "../../../assets/videos/detailsBackground.mp4"
 import "../../../styles/detalles.css"
 

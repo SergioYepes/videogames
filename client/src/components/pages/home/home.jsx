@@ -1,12 +1,12 @@
 import React, { useState,useEffect } from 'react'
-import Cards from '../../UI/Molecules/cards/cards'
+import Cards from '../../UI/Molecules/cards/cards.jsx'
 import {useDispatch, useSelector} from "react-redux"
 import { getAllGames } from '../../../redux/actions'
-import NavBar from "../../UI/Organisms/navBar/navBar"
-import Paginado from '../../UI/Organisms/Paginado/paginado'
-import Filtros from '../../UI/Organisms/Filtrado/filtros'
+import NavBar from "../../UI/Organisms/navBar/navBar.jsx"
+import Paginado from '../../UI/Organisms/Paginado/paginado.jsx'
+import Filtros from '../../UI/Organisms/Filtrado/filtros.jsx'
 import Video from "../../../assets/videos/homeBackground.mp4"
-import CustomVideo from '../../UI/Atoms/CustomVideo'
+import CustomVideo from '../../UI/Atoms/CustomVideo.jsx'
 import "../../../styles/home.css"
 const gift="https://i.pinimg.com/originals/53/ed/3f/53ed3f69d8af8e1fb7b0025a97452e38.gif"
 

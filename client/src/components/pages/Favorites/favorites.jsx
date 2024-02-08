@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 import {useSelector,useDispatch} from 'react-redux'
 import { removeFav } from '../../../redux/actions'
 import Video from "../../../assets/videos/favBackground.mp4"
-import CustomVideo from '../../UI/Atoms/CustomVideo'
+import CustomVideo from '../../UI/Atoms/CustomVideo.jsx'
 import "../../../styles/favoritos.css"
 
 

@@ -7,7 +7,7 @@ import validate from "../errors/validations";
 import "../../../styles/nueva.css";
 import { platformsJson } from "./platforms";
 import Video from "../../../assets/videos/createBackground.mp4";
-import CustomVideo from "../../UI/Atoms/CustomVideo";
+import CustomVideo from "../../UI/Atoms/CustomVideo.jsx";
 
 function Nueva() {
   const dis = useDispatch();
