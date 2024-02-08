@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm install",
-    "start": "nodemon index.js",
+    "start": "node index.js",
+    "dev":"nodemon -L",
     "test": "mocha -w ./tests/**/*.spec.js"
   },
   "author": "devscp682",
